@@ -1,0 +1,211 @@
+/* Copy from esportteamweb/style.css with minimal adjustments */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #dfdfdf;
+}
+
+.main-header {
+  background-color: rgb(10, 8, 45);
+  color: #ffffff;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  text-wrap: nowrap;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+.logo img {
+  margin-right: auto;
+  height: 130px;
+  width: 130px;
+}
+
+.main-nav .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 50px;
+}
+
+.nav-item a {
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  transition: color 0.3s ease;
+}
+
+.nav-item a:hover {
+  color: #f9c424;
+}
+
+.header-actions {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+.action-item {
+  cursor: pointer;
+  font-size: auto;
+  transition: color 0.3s ease;
+}
+
+.action-item:hover {
+  color: #f9c424;
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .logo,
+  .header-actions {
+    margin-bottom: 1rem;
+  }
+  .main-nav {
+    order: 1;
+    width: 100%;
+    margin-top: 1rem;
+  }
+  .nav-list {
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+#heroCarousel .carousel-item img {
+  height: 700px;
+  object-fit: cover;
+}
+
+.news-section {
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.news-item {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.news-img {
+  width: 200px;
+  object-fit: cover;
+}
+
+.news-content h3 {
+  margin: 0;
+}
+
+.news-item:hover {
+  color: #f9c424;
+}
+
+.footer {
+  background: rgb(10, 8, 45);
+  color: #fff;
+  padding: 40px 20px 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer-column {
+  flex: 1 1 200px;
+  margin: 10px;
+}
+
+.footer-column h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 6px;
+  transition: color 0.3s ease;
+}
+
+.footer-column ul li a:hover {
+  color: #f9c424;
+}
+
+.footer-logo {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+hr {
+  border-color: #444;
+  margin: 30px 0 10px;
+}
+
+.footer-bottom {
+  text-align: center;
+  font-size: 14px;
+  position: relative;
+}
+
+.social-icons a {
+  color: #fff;
+  margin: 0 8px;
+  font-size: 20px;
+}
+
+.scroll-top {
+  position: absolute;
+  right: 10px;
+  top: -25px;
+  background: red;
+  color: white;
+  padding: 10px;
+  border-radius: 50%;
+  text-decoration: none;
+}
+
+.scroll-top:hover {
+  background: #f9c424;
+}
+
+.partners-list {
+  list-style: none;
+  padding: 0;
+}
+
+.partners-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.partner-logo {
+  width: 28px;
+  height: auto;
+  margin-right: 10px;
+}
+
